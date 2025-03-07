@@ -16,6 +16,10 @@ public class Humans {
     }
 
 
+    public Humans() {
+
+    }
+
     public void setHumans(Humans[] humans) {
         this.humans = humans;
     }
@@ -42,8 +46,19 @@ public class Humans {
                 heightOfHumans.add(human.getHeight());
             }
 
-            genderOfHumans.add(human.getGender());
+            if(human.getGender() == 'F') {
+
+                genderOfHumans.add(human.getGender());
+            }
+
         }
+
+        short femaleCountInfo = 0;
+
+        femaleCountInfo = (short)genderOfHumans.toArray().length;
+
+
+
 
         float add = 0;
         float max = 0;
@@ -61,9 +76,11 @@ public class Humans {
 
 
         System.out.print("Average: ");
-        System.out.print(average);
+        System.out.println(average);
 
 
+        System.out.print("Females: ");
+        System.out.print(femaleCountInfo);
 
     }
 

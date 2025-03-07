@@ -6,7 +6,7 @@ import axion.sakundoproject1.javacore.exerciciosjava.domain.Male;
 
 public class HumanTest {
     public static void main(String[] args) {
-        Humans allHumans = new Humans("All Humans", 0.0F, 'A');
+        Humans allHumans = new Humans();
 
         Male male1 = new Male("Sakundo", 1.78F, 'M');
         Male male2 = new Male("Agaroth", 1.88F, 'M');
@@ -15,7 +15,7 @@ public class HumanTest {
         Female female2 = new Female("Hitsuri Mei", 1.64F, 'F');
 
 
-        allHumans.setHumans(new Humans[]{male1, male2, male3});
+        allHumans.setHumans(new Humans[]{male1, male2, male3, female1, female2});
 
         allHumans.print();
         System.out.println("\n-------------------------");
