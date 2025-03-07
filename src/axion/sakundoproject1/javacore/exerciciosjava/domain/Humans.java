@@ -53,7 +53,7 @@ public class Humans {
 
         }
 
-        short femaleCountInfo = 0;
+        short femaleCountInfo;
 
         femaleCountInfo = (short)genderOfHumans.toArray().length;
 
