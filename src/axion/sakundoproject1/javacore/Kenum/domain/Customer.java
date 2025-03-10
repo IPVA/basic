@@ -4,10 +4,17 @@ public class Customer {
     private String name;
     private CustomerType customerType;
 
+    public enum PaymentType {
+        DEBIT, CREDIT
+    }
 
-    public Customer(String name, CustomerType customerType) {
+    private PaymentType paymentType;
+
+
+    public Customer(String name, CustomerType customerType, PaymentType paymentType) {
         this.name = name;
         this.customerType = customerType;
+        this.paymentType = paymentType;
     }
 
     @Override
@@ -15,6 +22,7 @@ public class Customer {
         return "Customer{" +
                 "name='" + name + '\'' +
                 ", customerType=" + customerType +
+                ", paymentType=" + paymentType +
                 '}';
     }
 }
