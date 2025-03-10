@@ -1,14 +1,14 @@
 package basic.javacore.Kenum.domain;
 
 public class Customer {
-    private String name;
-    private CustomerType customerType;
+    private final String name;
+    private final CustomerType customerType;
 
     public enum PaymentType {
         DEBIT, CREDIT
     }
 
-    private PaymentType paymentType;
+    private final PaymentType paymentType;
 
 
     public Customer(String name, CustomerType customerType, PaymentType paymentType) {
@@ -21,7 +21,8 @@ public class Customer {
     public String toString() {
         return "Customer{" +
                 "name='" + name + '\'' +
-                ", customerType=" + customerType +
+                ", customerType=" + customerType.getReportValue() +
+                ", customerTypeDatabaseValue=" + customerType.getDbValue() +
                 ", paymentType=" + paymentType +
                 '}';
     }
