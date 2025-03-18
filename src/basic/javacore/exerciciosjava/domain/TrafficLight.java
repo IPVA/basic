@@ -2,22 +2,30 @@ package basic.javacore.exerciciosjava.domain;
 
 public class TrafficLight {
 
-    public char trafficLightCurrentState(char trafficLight) {
+    public static String trafficLightCurrentState(String trafficLight) {
 
-        switch(trafficLight){
-            case 'Y':
-                System.out.println("Is Yellow");
+        char charOfTrafficLight = trafficLight.toUpperCase().charAt(0);
+
+        switch(charOfTrafficLight){
+            case 'G':
+                trafficLight = "Yellow";
                 break;
 
-            case 'G':
-                System.out.println("Is Green");
+            case 'Y':
+                trafficLight = "Red";
                 break;
 
             case 'R':
-                System.out.println("Its Red");
+                trafficLight = "Green";
                 break;
+
+            default:
+                throw new IllegalArgumentException();
+
         }
-        return '0';
+
+        System.out.println("Output: " + trafficLight);
+        return trafficLight;
     }
 
 }
