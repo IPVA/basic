@@ -6,7 +6,7 @@ import java.util.Collections;
 public class NegativeNumber {
 
 
-    public int inverseNumber(int number){
+    public static int inverseNumber(int number){
 
         String[] array = String.valueOf(number).split("");
 
