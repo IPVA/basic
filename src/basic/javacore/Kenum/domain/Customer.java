@@ -3,11 +3,6 @@ package basic.javacore.Kenum.domain;
 public class Customer {
     private final String name;
     private final CustomerType customerType;
-
-    public enum PaymentType {
-        DEBIT, CREDIT
-    }
-
     private final PaymentType paymentType;
 
 
