@@ -7,7 +7,7 @@ public class PlayerTest02 {
         Player p1 = new Player("Shaiko");
         Player p2 = new Player("Sakundo");
         Player p3 = new Player("Agaroth");
-        Player p4 = new Player("Ace");
+        Player p4 = new Player("Shadow");
         Player p5 = new Player("Hitsuri Mei");
         Team team2 = new Team("Axion Team");
 
