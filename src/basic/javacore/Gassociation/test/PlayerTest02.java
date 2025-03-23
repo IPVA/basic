@@ -6,8 +6,8 @@ public class PlayerTest02 {
     public static void main(String[] args) {
         Player p1 = new Player("Shaiko: CyberSecurity Specialist");
         Player p2 = new Player("Sakundo: Full-Stack Developer");
-        Player p3 = new Player("Agaroth: DevOps Engineer");
-        Player p4 = new Player("Shadow: Generalist Software Test (Specialist in all)");
+        Player p3 = new Player("Agaroth:  DevOps Engineer");
+        Player p4 = new Player("Shadow:   Generalist Software Test (Specialist in all )");
         Player p5 = new Player("Hitsuri Mei: Generalist Artist (Specialist in all)");
         Team team2 = new Team("Axion Team");
 
