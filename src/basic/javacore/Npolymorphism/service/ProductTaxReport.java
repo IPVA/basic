@@ -1,21 +1,13 @@
 package basic.javacore.Npolymorphism.service;
-import basic.javacore.Npolymorphism.domain.Computer;
-import basic.javacore.Npolymorphism.domain.Tomato;
+import basic.javacore.Npolymorphism.domain.Product;
+
 public class ProductTaxReport {
 
-    public static void generateComputerTaxReport(Computer computer) {
-        System.out.println("Starting Computer Tax Report....");
-        double taxValue = computer.calculateTaxValue();
-        System.out.println("Computer name: " + computer.getName());
-        System.out.println("Computer Price: " + computer.getPrice());
-        System.out.println("Tax Value: " + taxValue);
-    }
-
-    public static void generateTomatoTaxReport(Tomato tomato) {
-        System.out.println("Starting Tomato Tax Report....");
-        double taxValue = tomato.calculateTaxValue();
-        System.out.println("Computer name: " + tomato.getName());
-        System.out.println("Computer Price: " + tomato.getPrice());
+    public static void generateTaxReport(Product product) {
+        System.out.println("Starting Tax Report....");
+        double taxValue = product.calculateTaxValue();
+        System.out.println("Product name: " + product.getName());
+        System.out.println("Product price: " + product.getPrice());
         System.out.println("Tax Value: " + taxValue);
     }
 }
